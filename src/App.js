@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './geral.css';
 import React from 'react';
 import Movies from './components/Movies';
 import Header from './components/Header';
