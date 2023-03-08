@@ -1,0 +1,12 @@
+.movie-card-container{
+  justify-content: space-around;
+}
+.movie-card-container img{
+  max-height: 75%;
+}
+
+.movie-card-container a{
+  color: black;
+  font-size: 1.2em;
+  text-decoration: none;
+}

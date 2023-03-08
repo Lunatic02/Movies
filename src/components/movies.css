@@ -1,0 +1,10 @@
+section{
+  text-align: center;
+}
+.movies-container{
+  display: grid;
+  margin-top: 2em;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+ 
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import MovieCard from './MovieCard';
+import './movies.css';
 
 const Movies = () => {
   const [movies, setMovies] = React.useState([]);
@@ -28,20 +29,28 @@ const Movies = () => {
     </form>
   );
   if (movies === undefined) {
-    return <div>{form}</div>;
+    return <section>{form}</section>;
   }
 
   return (
-    <section>
-      <div>
+    <>
+      <section>
         {form}
         <div>
-          {movies.map((movie) => {
-            return <MovieCard key={movie.imdbID} movie={movie} />;
-          })}
+          <div className="movies-container">
+            {movies.map((movie) => {
+              return (
+                <MovieCard
+                  className="movieCard"
+                  key={movie.imdbID}
+                  movie={movie}
+                />
+              );
+            })}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
