@@ -4,13 +4,22 @@ import './movieCard.css';
 
 const MovieCard = ({ movie }) => {
   return (
-    <div className="movie-card-container">
-      <Link to={`movie/${movie.imdbID}`}>
-        <img src={movie.Poster} alt="" />
-        <h1>{movie.Title}</h1>
-      </Link>
-      <p>{movie.Year}</p>
-    </div>
+    <>
+      <div className="movie">
+        <Link to={`movie/${movie.imdbID}`}>
+          <div>
+            <p>{movie.Year}</p>
+          </div>
+          <div>
+            <img src={movie.Poster} alt={movie.title} />
+          </div>
+          <div>
+            <span>{movie.Type}</span>
+            <h3>{movie.Title}</h3>
+          </div>
+        </Link>
+      </div>
+    </>
   );
 };
 

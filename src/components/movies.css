@@ -1,11 +1,5 @@
-section{
+.form-container{
   text-align: center;
-}
-.movies-container{
-  display: grid;
-  margin-top: 2em;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
 }
 .section-container{
   margin-top: 20px;
@@ -16,20 +10,41 @@ section{
 } 
 .form-container input{
   align-items: center;
+  border-radius: 7px 0px 0px 7px;
   width: 50%;
   height: 50px;
   border: 1px solid #262626;
+  border-top: 1px solid #262626;
+  border-right: 0px solid #262626;
+  border-bottom: 1px solid #262626;
 }
 .form-container button{
   height: 52px;
-  width: 50px;
   border: 1px solid #262626;
-  background-color: #F2A30F;
-  color: #262626;
+  border-top: 1px solid #262626;
+  border-right: 1px solid #262626;
+  border-bottom: 1px solid #262626;
+  border-radius: 0px 7px 7px 0px;
+  border-left: none;
+  width: 50px;
+  background-color: #2E3840;
+  color: #E9F8F9;
 }
 .form-container button:hover{
-  color: #F2A30F;
-  background-color: #262626;
+  background-color: #E9F8F9;
+  color: #262626;
   transition: .5s;
   cursor: pointer;
+}
+
+.movies-container{
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.movies-itens{
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
 }

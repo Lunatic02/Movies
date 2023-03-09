@@ -33,23 +33,25 @@ const Movies = () => {
   if (movies === undefined) {
     return (
       <section className="section-container">
-        <div className="form-container">{form}</div>
-        <span className="red">
-          <h1>Movie Not Found</h1>
-        </span>
+        <div className="form-container">
+          {form}
+          <span className="red">
+            <h1>Movie Not Found</h1>
+          </span>
+        </div>
       </section>
     );
   } else if (movies.length < 1) {
     return (
       <div>
         <section className="section-container">
-          <div className="form-container">{form}</div>
-          <h1>Add a movie of your choice</h1>
+          <div className="form-container">
+            {form}
+            <h1>Add a movie of your choice</h1>
+          </div>
         </section>
       </div>
     );
-  } else {
-    //  block of code to be executed if the condition1 is false and condition2 is false
   }
   return (
     <>
@@ -57,15 +59,17 @@ const Movies = () => {
         <div className="form-container">{form}</div>
         <div>
           <div className="movies-container">
-            {movies.map((movie) => {
-              return (
-                <MovieCard
-                  className="movieCard"
-                  key={movie.imdbID}
-                  movie={movie}
-                />
-              );
-            })}
+            <div className="movies-itens">
+              {movies.map((movie) => {
+                return (
+                  <MovieCard
+                    className="movieCard"
+                    key={movie.imdbID}
+                    movie={movie}
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>

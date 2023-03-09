@@ -1,10 +1,10 @@
 header{
-  background-color: #F2B90F;
-  color: #262626;
+  background-color: #FF0303;
+  color: #2E3840;
   height: 60px;
 }
 header a{
-  color: #262626;
+  color: #2E3840;
   text-decoration: none;
 }
 .header-container{
@@ -21,17 +21,22 @@ header a{
 }
 .header-container li a{
   padding: 10px;
-  background-color: #F2A30F;
+  background-color: #2E3840;
+  color: #E9F8F9;
   margin-left: 10px;
   border-radius: 4px;
 }
 .header-container li a:hover{
-  background-color: #262626;
-  color: #F2A30F;
+  background-color: #E9F8F9;
+  color: #262626;
   transition: .5s;
 }
 .header-container h1 span{
-  color: #BF1F1F;
+  color: #E9F8F9;
+}
+.header-container h1 span:hover{
+  color: #2E3840;
+  transition: .5s;
 }
 
 
