@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import MovieCard from './MovieCard';
 import './movies.css';
 
 const Movies = () => {
   const [movies, setMovies] = React.useState([]);
   const [inputValue, setInputValue] = React.useState('');
-
+  useEffect(() => {
+    fetch(`http://www.omdbapi.com/?apikey=e105c732&s=movie`)
+      .then((r) => r.json())
+      .then((json) => {
+        setMovies(json.Search);
+      });
+  }, []);
   const inputSend = (e) => {
     e.preventDefault();
     fetch(`http://www.omdbapi.com/?apikey=e105c732&s=${inputValue}`)
@@ -59,6 +65,9 @@ const Movies = () => {
         <div className="form-container">{form}</div>
         <div>
           <div className="movies-container">
+            <span>
+              <h1>A cool list based on your Searchs</h1>
+            </span>
             <div className="movies-itens">
               {movies.map((movie) => {
                 return (
