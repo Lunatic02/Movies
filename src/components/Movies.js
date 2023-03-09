@@ -62,12 +62,15 @@ const Movies = () => {
   return (
     <>
       <section className="section-container">
-        <div className="form-container">{form}</div>
+        <div className="form-container">
+          {form}
+          <span>
+            <h1>A cool list based on your Searchs</h1>
+          </span>
+        </div>
+
         <div>
           <div className="movies-container">
-            <span>
-              <h1>A cool list based on your Searchs</h1>
-            </span>
             <div className="movies-itens">
               {movies.map((movie) => {
                 return (
@@ -85,5 +88,6 @@ const Movies = () => {
     </>
   );
 };
+// adicionando comentario para teste git pull
 
 export default Movies;
