@@ -47,7 +47,7 @@ const Movies = () => {
         <section className="section-container">
           <div className="form-container">
             {form}
-            <h1>Add a movie of your choice</h1>
+            <h1>Search a movie of your choice</h1>
           </div>
         </section>
       </div>

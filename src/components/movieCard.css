@@ -84,6 +84,14 @@
 }
 .movie:hover div:nth-of-type(1) {
   opacity: 1;
+  background: #2E3840;
 }
 
+@media (max-width:1000px) {
+  .movie {
+    width: 90%;
+    height: 90%;
+    
+   }
+}
 
