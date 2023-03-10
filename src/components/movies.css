@@ -3,6 +3,7 @@
 }
 .section-container{
   margin-top: 20px;
+  
 }
 .section-container span.red{
   color: #FF0303;
@@ -43,11 +44,13 @@
   justify-content: center;
   margin-top: 2rem;
   flex-wrap: wrap;
+  
 }
 .movies-itens{
   display: grid;
   grid-gap: 50px;
   grid-template-columns: 1fr 1fr 1fr;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 @media (max-width:1000px) {
@@ -60,6 +63,7 @@
   .movies-itens{
     grid-gap: 0px;
     grid-template-columns: 1fr;
+    box-shadow: none;
   }
 }
 

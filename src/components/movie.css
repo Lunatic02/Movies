@@ -6,10 +6,12 @@
   align-items: center;
   margin-top: 1.5em;
   color: #2E3840;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .title{
   display: flex;
   justify-content: center;
+  
 }
 .titulo-e-data{
   font-size: 2rem;
