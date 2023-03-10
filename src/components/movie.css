@@ -1,0 +1,91 @@
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  margin-top: 1.5em;
+  color: #2E3840;
+}
+.title{
+  display: flex;
+  justify-content: center;
+}
+.titulo-e-data{
+  font-size: 2rem;
+}
+.title-informacoes{
+  background-color: #2E3840;
+  padding: 20px;
+  color: white; 
+  font-size: 1.4em;
+  border-radius: 0px 20px 20px 0px;
+}
+.more-informations{
+  margin-top: 2em;
+}
+.more-informations div{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.title img{
+  border-radius: 20px 0px 0px 20px;
+}
+
+.plot{
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.plot-title h1{
+  font-size: 4em;
+}
+.plot-text p{
+  font-size: 2.5em;
+}
+.awards{
+  text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.awards-title h1{
+  font-size: 4em;
+}
+.awards-text p{
+  font-size: 2.5em;
+}
+
+.ratings{
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.ratings-title h1{
+  font-size: 4em;
+}
+.ratings-text p{
+  font-size: 2.5em;
+}
+.ratings-notes{
+  display: flex;
+  justify-content: space-around;
+  font-size: 2em;
+}
+.color-81-100{
+  color: #66cc33;
+}
+.color-61-80{
+  color: #66cc33
+}
+.color-40-60{
+  color: #ffcc33;
+}
+.color-20-39{
+  color: #ff0000;
+}
+.color-0-19{
+  color: #ff0000;
+}
+
+
+
