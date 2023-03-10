@@ -8,7 +8,9 @@ const Header = () => {
       <div className="header-container">
         <div>
           <h1>
-            Should i <span>watch?</span>
+            <NavLink to="/" end>
+              Should i <span>watch?</span>
+            </NavLink>
           </h1>
         </div>
         <div>

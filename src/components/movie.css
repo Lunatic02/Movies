@@ -13,6 +13,7 @@
 }
 .titulo-e-data{
   font-size: 2rem;
+  border-bottom: white 1px solid;
 }
 .title-informacoes{
   background-color: #2E3840;
@@ -20,6 +21,7 @@
   color: white; 
   font-size: 1.4em;
   border-radius: 0px 20px 20px 0px;
+  
 }
 .more-informations{
   margin-top: 2em;
@@ -85,6 +87,34 @@
 }
 .color-0-19{
   color: #ff0000;
+}
+@media (max-width:840px) {
+  .titulo-e-data{
+    border-bottom: none;
+  }
+  .container h1{
+    font-size: 1.4em;
+  }
+  .plot h1, .ratings h1, .awards h1{
+    font-size: 3em;
+  }
+  .title{
+    display: block;
+    margin-top: -25px;
+    text-align: center;
+    background-color: #2E3840;
+  }
+  .plot-text p, .awards-text p{
+    font-size: 1.6em;
+  }
+  .ratings-notes{
+    display: block;
+    justify-content: space-around;
+    font-size: 2em;
+  }
+  .ratings-notes h2{
+    font-size: 1em;
+  }
 }
 
 

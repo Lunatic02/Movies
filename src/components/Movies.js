@@ -65,7 +65,7 @@ const Movies = () => {
         <div className="form-container">
           {form}
           <span>
-            <h1>A cool list based on your Searchs</h1>
+            <h1>A cool list based on your Search</h1>
           </span>
         </div>
 

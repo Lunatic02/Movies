@@ -38,5 +38,19 @@ header a{
   color: #2E3840;
   transition: .5s;
 }
-
-
+@media (max-width:650px) {
+  .header-container{
+    height: 60px;
+  }
+  header{
+    height: 60px;
+  }
+  header h1{
+    font-size: 1.7em;
+  }
+}
+@media (max-width:400px){
+  header h1{
+    font-size: 1.5em;
+  }
+}

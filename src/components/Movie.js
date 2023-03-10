@@ -10,6 +10,7 @@ const Movie = () => {
       .then((r) => r.json())
       .then((json) => setMovie(json));
   }, []);
+
   const metaScore = () => {
     if (+movie.Metascore >= 81) {
       return (
@@ -57,7 +58,7 @@ const Movie = () => {
   return (
     <section className="container">
       <div className="title">
-        <img src={movie.Poster} alt="" />
+        <img className="foto" src={movie.Poster} alt="" />
         <div className="title-informacoes">
           <div className="titulo-e-data">
             <h1>{movie.Title}</h1>
