@@ -1,0 +1,44 @@
+.container{
+  border-radius: 4px;
+}
+.container-contato{
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+}
+.title-contato{
+  margin-top: 10px;
+  color: #2E3840;
+}
+.conteudo-contato img{
+  width: 90%;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.title-contato ul li a, .title-contato p{
+  padding: 15px;
+  font-size: 1.5rem;
+  color: #2E3840;
+}
+.title-contato ul li{
+  margin-bottom: 1.5rem;
+
+}
+
+.title-contato ul {
+  margin-top: 1.5rem;
+}
+.title-contato ul li a:hover{
+  background-color: #2E3840;
+  color: white;
+  transition: .5s;
+}
+
+@media (max-width:1000px) {
+  .container-contato{
+    grid-template-columns:1fr;
+  }
+  .conteudo-contato img{
+    width: 45%;
+  }
+}
