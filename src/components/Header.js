@@ -8,7 +8,7 @@ const Header = () => {
       <div className="header-container">
         <div>
           <h1>
-            <NavLink to="/" end>
+            <NavLink to="/Movies" end>
               Should i <span>watch?</span>
             </NavLink>
           </h1>
@@ -16,7 +16,7 @@ const Header = () => {
         <div>
           <ul>
             <li>
-              <NavLink to="/" end>
+              <NavLink to="/Movies" end>
                 Movies
               </NavLink>
             </li>

@@ -12,9 +12,9 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Movies />} />
+          <Route path="/Movies" element={<Movies />} />
           <Route path="contato" element={<Contato />} />
-          <Route path="movie/:id" element={<Movie />} />
+          <Route path="/Movies/movie/:id" element={<Movie />} />
         </Routes>
       </BrowserRouter>
     </div>

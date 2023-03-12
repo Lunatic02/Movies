@@ -6,7 +6,7 @@ const Movies = () => {
   const [movies, setMovies] = React.useState([]);
   const [inputValue, setInputValue] = React.useState('');
   useEffect(() => {
-    fetch(`http://www.omdbapi.com/?apikey=e105c732&s=show`)
+    fetch(`https://www.omdbapi.com/?apikey=e105c732&s=show`)
       .then((r) => r.json())
       .then((json) => {
         setMovies(json.Search);
@@ -14,7 +14,7 @@ const Movies = () => {
   }, []);
   const inputSend = (e) => {
     e.preventDefault();
-    fetch(`http://www.omdbapi.com/?apikey=e105c732&s=${inputValue}`)
+    fetch(`https://www.omdbapi.com/?apikey=e105c732&s=${inputValue}`)
       .then((r) => r.json())
       .then((json) => {
         setMovies(json.Search);
