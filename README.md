@@ -8,7 +8,6 @@ https://lunatic02.github.io/Movies/
 <li>React</li>
 <li>Routering</li>
 <li>Use Params</li>
-<li>Styled Components</li>
 <li>Fetch</li>
 <li>Api Link: https://www.omdbapi.com/</li>
 </ul>
